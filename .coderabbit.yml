@@ -1,14 +1,18 @@
 review:
   enabled: true
-  auto_comment: true
-  suggestions: true
-  summary: true
-  severity_levels: true
-  rules:
-    - readability
-    - maintainability
-    - performance
-    - style
+  auto_comment: true          # Comentarios automáticos
+  suggestions: true           # Sugerencias aplicables
+  summary: true               # Resumen del PR
+  severity_levels: true       # Gravedad (info/warn/error)
+  rules:                      # Qué detectar y comentar
+    - readability             # legibilidad/estilo
+    - maintainability         # mantenibilidad / malas prácticas
+    - performance             # rendimiento
+    - duplication             # código repetido
+    - style                   # convenciones de estilo
 languages:
   - c
   - cpp
+paths:
+  include:
+    - Andinobot_base/**       # Carpeta principal del código
