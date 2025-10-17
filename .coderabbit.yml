@@ -1,0 +1,14 @@
+review:
+  enabled: true
+  auto_comment: true
+  suggestions: true
+  summary: true
+  severity_levels: true
+  rules:
+    - readability
+    - maintainability
+    - performance
+    - style
+languages:
+  - c
+  - cpp
