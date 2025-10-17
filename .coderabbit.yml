@@ -2,7 +2,7 @@ review:
   enabled: true
   auto_comment: true
   suggestions: true
-  summary: true
+  summary: false
   severity_levels: true
   rules:
     - readability
